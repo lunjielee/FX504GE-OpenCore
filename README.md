@@ -1,5 +1,6 @@
 # FX504GE-OpenCore
 - macOS Catalina 10.15.4 Beta
+- OpenCore Version: 2020-02-10(e955562) [![Release](https://img.shields.io/github/v/release/williambj1/OpenCore-Factory?color=orange&include_prereleases&label=Release)](https://github.com/williambj1/OpenCore-Factory/releases)
 - Bios FX504GE.318
 # Hardware Specs
 - CPU: Intel Core i7-8750H 6 cores, 12 threads
@@ -41,3 +42,6 @@
 11. `SSDT-PMC.aml` (Enable native nvram for 300-series)
 ## Patch
 1. EC0 to EC: Find `4543305F` Replace `45435F5F`
+2. GFX0 to IGPU: Find `47465830` Replace `49475055`
+3. Rename _OSI to XOSI: Find `5F4F5349` Replace `584F5349`
+4. Rename GPRW to XPRW: Find `47505257 02` Replace `58505257 02`
