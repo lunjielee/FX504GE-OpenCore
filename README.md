@@ -26,3 +26,18 @@
 - Secure Boot: Disabled
 - SATA mode: AHCI
 - DVMT-Preallocated: 64MB
+# ACPI
+## Add
+'SSDT-GPRW.aml' (_PRW USB wake up patch)
+'SSDT-PLUG-_SB.PR00.aml' (plugin-type=1)
+'SSDT-SBUS.aml' (SBUS)
+'SSDT-PNLF.aml' (Notebook brightness)
+'SSDT-PNLFCFL.aml' (Notebook brightness for coffeelake)
+'SSDT-USBX.aml' (USB power property injection)
+'SSDT-XOSI.aml' (activate Trackpad under Darwin)
+'SSDT-ARTC.aml' (Apple uses ARTC instead of RTC0)
+'SSDT-UIAC.aml' (Block empty usb ports)
+'SSDT-TPDT.aml' (Enable GPIO for Trackpad)
+'SSDT-PMC.aml' (Enable native nvram for 300-series)
+## Patch
+EC0 to EC: Find '4543305F' Replace '45435F5F'
